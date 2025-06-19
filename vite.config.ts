@@ -7,4 +7,6 @@ export default defineConfig({
     injectStyles(),
     removeHtmlComments(),
   ],
+
+  base: '/',
 })
