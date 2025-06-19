@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" itemtype="https://schema.org/Person" itemscope>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preload" as="image" href="/icon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="/portrait.avif" type="image/jpeg" />
+
+    <!-- Schema -->
+    <link itemprop="url" href="https://kabarchonok.me" />
+    <meta itemprop="gender" content="male" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="shortcut icon" href="/favicon-48x48.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="kbrchnk.me" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Ivan Bulakhov</title>
+    <meta name="description" content="Ivan Bulakhov's contacts" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <div class="main">
+        <header class="header">
+          <div class="logo">
+            <img width="40" height="40" src="/icon.svg" alt="Kabarchonok website logo" />
+          </div>
+        </header>
+
+        <section class="intro">
+          <h1 class="title">
+            Hi! I'm
+            <picture>
+              <source srcset="/portrait.avif" type="image/avif" />
+
+              <img
+                class="portrait"
+                width="80"
+                height="80"
+                src="https://avatars.githubusercontent.com/u/17063396"
+                alt="Ivan Bulakhov's portrait"
+                itemprop="image"
+              />
+            </picture>
+            <span itemprop="givenName">Ivan</span>&nbsp;<span itemprop="familyName">Bulakhov</span>
+          </h1>
+
+          <p class="description">
+            <span itemprop="jobTitle">Frontend Engineer</span> with 10+&nbsp;years of&nbsp;web development experience.
+            Passionate about creating intuitive, accessible interfaces with a&nbsp;focus on&nbsp;performance and UX.
+          </p>
+        </section>
+
+        <section>
+          <a href="https://github.com/kabarchonok" itemprop="sameAs" rel="me">GitHub</a>
+          <a href="https://www.linkedin.com/in/kabarchonok/" itemprop="sameAs" rel="me">LinkedIn</a>
+          <a href="mailto:hej@kabarchonok.me" itemprop="email" rel="me">hej@kabarchonok.me</a>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "kabarchonok.me",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
+  "engines": {
+    "node": "^22.13.0",
+    "pnpm": "^10.0.0"
+  },
+  "scripts": {
+    "dev": "vite dev --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint-all": "pnpm run /^lint:.*/",
+    "lint:eslint": "eslint .",
+    "lint:stylelint": "stylelint \"**/*.css\"",
+    "lint-fix-all": "pnpm run /^lint-fix:.*/",
+    "lint-fix:eslint": "eslint . --fix",
+    "lint-fix:stylelint": "pnpm run lint:stylelint --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.13.1",
+    "eslint": "^9.27.0",
+    "eslint-plugin-format": "^1.0.1",
+    "stylelint": "16.15.0",
+    "stylelint-config-clean-order": "7.0.0",
+    "typescript": "~5.7.3",
+    "vite": "^6.3.5"
+  }
+}
